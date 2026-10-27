@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0c0c0d">
+<meta name="description" content="Behind the Party: diagnóstico de 11 preguntas para Denise, Callejero PXM y eventos de Mar & Wana.">
+<meta name="robots" content="noindex,nofollow">
+<title>BEHIND THE PARTY — CALLEJERO PXM</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--dark:#0c0c0d;--paper:#f7f6ee;--lime:#dbff36;--pink:#ff299f;--muted:#b8b8b9;--stroke:#424245;--anton:'Anton',Impact,'Arial Narrow',sans-serif;--body:'DM Sans',Arial,sans-serif;--mono:'Space Mono',monospace}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;color:var(--paper);background:var(--dark);font-family:var(--body);-webkit-font-smoothing:antialiased}
+button,input,textarea{font:inherit}button{cursor:pointer} a{color:inherit;text-decoration:none} [hidden]{display:none!important}
+::selection{background:var(--lime);color:#111}
+.top{background:var(--lime);color:#111;text-align:center;padding:8px 14px;font:700 10px/1.5 var(--mono);letter-spacing:.055em}
+.site-header{border-bottom:1px solid var(--stroke);padding:16px clamp(18px,4.8vw,70px);display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{font:clamp(27px,3vw,37px)/1 var(--anton);letter-spacing:-.04em}.brand sup{color:var(--lime);font:700 9px var(--mono);vertical-align:super;margin-left:3px}
+.header-aside{text-align:right;color:#bcbcbc;font:700 10px/1.4 var(--mono);letter-spacing:.04em}.header-aside strong{color:var(--paper)}
+.hero{padding:35px clamp(18px,4.8vw,70px) 37px;display:grid;grid-template-columns:1fr 190px;align-items:end;gap:30px;border-bottom:1px solid var(--stroke)}
+.eyebrow{color:var(--lime);font:700 10px/1.5 var(--mono);letter-spacing:.08em;margin-bottom:15px}
+h1{font:clamp(56px,8.8vw,116px)/.91 var(--anton);letter-spacing:-.046em;margin:0;text-transform:uppercase;max-width:930px}h1 em{font-style:normal;color:var(--pink)}
+.hero p{max-width:620px;font:500 15px/1.55 var(--body);color:#d2d2d2;margin:17px 0 0}
+.hero-badge{background:var(--lime);color:#111;padding:18px;display:flex;flex-direction:column;gap:3px;justify-content:space-between;min-height:132px}
+.hero-badge strong{font:clamp(75px,8vw,118px)/.86 var(--anton);letter-spacing:-.06em}.hero-badge span{font:700 10px/1.5 var(--mono)}
+.ticker{display:flex;justify-content:space-between;gap:10px;border-bottom:1px solid var(--stroke);padding:12px clamp(18px,4.8vw,70px);color:#aaa;font:700 9px/1.55 var(--mono);letter-spacing:.06em}.ticker span:nth-child(2){color:var(--pink)}
+.main{max-width:980px;padding:35px 20px 86px;margin:auto}
+.intro{border-left:4px solid var(--pink);padding-left:17px;margin-bottom:27px}
+.intro .little{color:var(--lime);font:700 10px/1.5 var(--mono);letter-spacing:.06em}
+.intro h2{font:clamp(34px,5vw,61px)/1 var(--anton);margin:9px 0 10px;letter-spacing:-.025em}.intro p{font:500 14px/1.6 var(--body);color:#b7b7ba;margin:0;max-width:680px}
+.group{margin:33px 0 14px}.group h3{font:clamp(29px,4vw,44px)/1 var(--anton);margin:7px 0 7px;letter-spacing:-.02em;text-transform:uppercase}.group small{font:700 10px/1.5 var(--mono);letter-spacing:.05em;color:var(--lime)}
+.q{position:relative;padding:22px clamp(16px,2.8vw,28px) 24px;border:1px solid #3d3d42;background:linear-gradient(180deg,#17171a 0%,#121215 100%);margin:16px 0;box-shadow:inset 0 0 0 1px rgba(255,255,255,.03)}
+.q::before{content:"PREGUNTA";position:absolute;top:-10px;right:14px;background:var(--dark);border:1px solid #494950;color:var(--lime);padding:4px 8px;font:700 9px/1 var(--mono);letter-spacing:.08em}
+.q::after{content:"";position:absolute;left:-1px;top:-1px;width:54px;height:4px;background:linear-gradient(90deg,var(--pink),var(--lime));}
+.q legend{display:contents}
+.question{display:flex;align-items:flex-start;gap:14px;margin:0 0 18px;font:700 clamp(16px,2.2vw,19px)/1.42 var(--body);letter-spacing:-.01em}
+.qn{display:inline-flex;align-items:center;justify-content:center;min-width:36px;height:36px;padding:0 9px;background:#101012;border:1px solid #4f4f56;color:var(--pink);font:700 12px/1 var(--mono);box-shadow:inset 0 0 0 1px rgba(255,255,255,.04)}
+.options{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.multi-hint{display:inline-block;color:var(--dark);background:var(--lime);font:700 10px/1.5 var(--mono);letter-spacing:.045em;padding:5px 9px;margin:0 0 14px}
+.multi-error{display:block;color:#ff96c9;font:700 11px/1.4 var(--mono);margin:13px 0 0}.q.needs-choice{border-color:var(--pink)}
+.option{position:relative;display:flex;align-items:center;gap:14px;min-height:72px;padding:14px 15px;border:1px solid #4d4d53;background:linear-gradient(180deg,#212126 0%,#1b1b20 100%);cursor:pointer;transition:border-color .14s,background .14s,transform .14s,box-shadow .14s;overflow:hidden}
+.option::before{content:"";position:absolute;left:0;top:0;bottom:0;width:0;background:linear-gradient(180deg,var(--pink),var(--lime));opacity:.9;transition:width .14s ease}
+.option:hover{transform:translateY(-1px);border-color:#7b7b84;box-shadow:0 8px 24px rgba(0,0,0,.18)}
+.option:has(input:checked){background:linear-gradient(180deg,rgba(255,41,159,.08) 0%,rgba(219,255,54,.10) 100%);border-color:var(--lime);box-shadow:0 0 0 1px rgba(219,255,54,.15),0 12px 28px rgba(0,0,0,.22)}
+.option:has(input:checked)::before{width:5px}
+.option:focus-within{outline:2px solid var(--pink);outline-offset:2px}
+.option input{position:absolute;opacity:0;width:1px;height:1px}
+.letter{display:inline-flex;align-items:center;justify-content:center;border:1px solid #8e8e94;width:34px;height:34px;flex:none;color:var(--lime);font:700 13px var(--mono);background:#161619;box-shadow:inset 0 0 0 1px rgba(255,255,255,.03)}
+.option:has(input:checked) .letter{background:var(--lime);border-color:var(--lime);color:#111;transform:rotate(-4deg)}
+.option span:last-child{font:700 14px/1.42 var(--body);max-width:28ch}
+textarea{display:block;width:100%;min-height:126px;resize:vertical;background:linear-gradient(180deg,#242428 0%,#1d1d21 100%);border:1px solid #777;color:var(--paper);padding:16px;font:500 14px/1.6 var(--body);border-radius:0;box-shadow:inset 0 0 0 1px rgba(255,255,255,.02)}
+textarea::placeholder{color:#a9a9ae}textarea:focus{outline:2px solid var(--lime);outline-offset:2px}
+.optional{display:inline-block;color:#111;background:var(--acid);font:700 10px/1.4 var(--mono);margin:-4px 0 14px;padding:4px 8px;letter-spacing:.05em}
+.send-section{margin-top:29px;padding:25px;background:var(--lime);color:#141414}
+.send-section h3{font:clamp(36px,5vw,62px)/.96 var(--anton);letter-spacing:-.035em;margin:0 0 10px;text-transform:uppercase}
+.send-section p{max-width:670px;font:600 14px/1.55 var(--body);margin:0 0 20px}
+.send{width:100%;min-height:63px;border:0;background:#111;color:var(--lime);font:700 12px/1.5 var(--mono);letter-spacing:.015em;padding:16px 18px}
+.send:active{transform:translateY(1px)}.send:focus-visible{outline:3px solid var(--pink);outline-offset:3px}
+.note{font:400 11px/1.7 var(--mono);color:#9b9b9f;margin:20px 0 0}
+.footer{border-top:1px solid var(--stroke);padding:24px clamp(18px,4.8vw,70px);font:700 10px/1.5 var(--mono);color:#929296;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}.footer strong{color:var(--pink)}
+@media(max-width:720px){.hero{grid-template-columns:1fr;gap:17px;padding-top:27px;padding-bottom:25px}.hero-badge{display:none}h1{font-size:clamp(51px,12vw,77px)}.hero p{font-size:13px;margin-top:12px}.main{padding:26px 14px 64px}.intro{margin-bottom:20px}.q{padding:19px 14px 20px}.q::before{right:10px;top:-9px}.question{gap:11px;font-size:15px}.qn{min-width:32px;height:32px;font-size:11px}.options{grid-template-columns:1fr}.option{min-height:66px;padding:13px}.option span:last-child{font-size:13px;max-width:none}.letter{width:32px;height:32px}.ticker span:last-child{display:none}.site-header{padding:16px}.footer{padding:20px 16px}}
+</style>
+</head>
+<body>
+<div class="top">CALLEJERO PXM ✳ BEHIND THE PARTY ✳ PUERTO ESCONDIDO</div>
+<header class="site-header"><div class="brand">CALLEJERO<sup>®</sup></div><div class="header-aside">10 OPCIONES MÚLTIPLES + 1 ABIERTA</div></header>
+<section class="hero"><div><div class="eyebrow">01 / ENTENDER ANTES DE CONSTRUIR</div><h1>BEHIND<br>THE <em>PARTY.</em></h1><p>11 preguntas para diseñar mejores herramientas sin cambiar la manera en que venden las RPs. Contesta lo que más se acerque a tu operación.</p></div><div class="hero-badge"><span>EL DIAGNÓSTICO</span><strong>11</strong><span>PREGUNTAS · 1 SOLO ENVÍO</span></div></section>
+<div class="ticker"><span>CALLEJERO / MAR &amp; WANA / OPERACIONES</span><span>LA TECNOLOGÍA SUMA · NO ESTORBA</span><span>2026</span></div>
+<main class="main">
+<div class="intro"><div class="little">EL FORMULARIO / 4 MIN APROX.</div><h2>HABLEMOS DE LO QUE SÍ IMPORTA.</h2><p>Elige una opción en cada pregunta. Al final, tus respuestas se preparan automáticamente para enviarlas por WhatsApp. No necesitas registrarte.</p></div>
+<form id="diagnostico">
+  <div class="group"><small>01 / OPERACIÓN</small><h3>CÓMO FUNCIONA HOY</h3></div>
+  <fieldset class="q"><legend><span class="question"><span class="qn">01</span>¿Con qué eventos te gustaría empezar?</span></legend><div class="options">
+    <label class="option"><input type="radio" name="q1" value="A) Con los 3 eventos de Mar &amp; Wana" required><span class="letter">A</span><span>Con los 3 eventos de Mar &amp; Wana</span></label>
+    <label class="option"><input type="radio" name="q1" value="B) Con todos los eventos que organizo"><span class="letter">B</span><span>Con todos los eventos que organizo</span></label>
+    <label class="option"><input type="radio" name="q1" value="C) Primero solo Callejero"><span class="letter">C</span><span>Primero solo Callejero</span></label>
+    <label class="option"><input type="radio" name="q1" value="D) Prefiero empezar con una prueba y decidir después"><span class="letter">D</span><span>Prefiero empezar con una prueba y decidir después</span></label>
+  </div></fieldset>
+  <fieldset class="q"><legend><span class="question"><span class="qn">02</span>¿Cómo trabajan actualmente las RPs entre los diferentes eventos?</span></legend><div class="options">
+    <label class="option"><input type="radio" name="q2" value="A) Las mismas chicas promocionan varios eventos" required><span class="letter">A</span><span>Las mismas chicas promocionan varios eventos</span></label>
+    <label class="option"><input type="radio" name="q2" value="B) Cada evento tiene su propio equipo"><span class="letter">B</span><span>Cada evento tiene su propio equipo</span></label>
+    <label class="option"><input type="radio" name="q2" value="C) Hay una combinación de ambos"><span class="letter">C</span><span>Hay una combinación de ambos</span></label>
+  </div></fieldset>
+  <fieldset class="q"><legend><span class="question"><span class="qn">03</span>¿Cómo llevas actualmente el control de las ventas de las RPs?</span></legend><div class="options">
+    <label class="option"><input type="radio" name="q3" value="A) Excel o Google Sheets" required><span class="letter">A</span><span>Excel o Google Sheets</span></label>
+    <label class="option"><input type="radio" name="q3" value="B) Reportes por WhatsApp"><span class="letter">B</span><span>Reportes por WhatsApp</span></label>
+    <label class="option"><input type="radio" name="q3" value="C) Un sistema de ventas"><span class="letter">C</span><span>Un sistema de ventas</span></label>
+    <label class="option"><input type="radio" name="q3" value="D) No tenemos un registro centralizado"><span class="letter">D</span><span>No tenemos un registro centralizado</span></label>
+  </div></fieldset>
+  <fieldset class="q"><legend><span class="question"><span class="qn">04</span>¿Puedes saber exactamente cuánto vende cada RP?</span></legend><div class="options">
+    <label class="option"><input type="radio" name="q4" value="A) Sí, por RP y por evento" required><span class="letter">A</span><span>Sí, por RP y por evento</span></label>
+    <label class="option"><input type="radio" name="q4" value="B) Tengo cifras aproximadas"><span class="letter">B</span><span>Tengo cifras aproximadas</span></label>
+    <label class="option"><input type="radio" name="q4" value="C) Solo conozco las ventas generales"><span class="letter">C</span><span>Solo conozco las ventas generales</span></label>
+    <label class="option"><input type="radio" name="q4" value="D) No tengo esa información"><span class="letter">D</span><span>No tengo esa información</span></label>
+  </div></fieldset>
+
+  <div class="group"><small>02 / RELACIÓN CON TURISTAS</small><h3>LO QUE PASA DESPUÉS</h3></div>
+  <fieldset class="q"><legend><span class="question"><span class="qn">05</span>¿Qué ocurre cuando un turista se interesa por una fiesta, pero no compra?</span></legend><div class="options">
+    <label class="option"><input type="radio" name="q5" value="A) La RP le da seguimiento" required><span class="letter">A</span><span>La RP le da seguimiento</span></label>
+    <label class="option"><input type="radio" name="q5" value="B) Le compartimos Instagram o WhatsApp del evento"><span class="letter">B</span><span>Le compartimos Instagram o WhatsApp del evento</span></label>
+    <label class="option"><input type="radio" name="q5" value="C) Generalmente perdemos ese contacto"><span class="letter">C</span><span>Generalmente perdemos ese contacto</span></label>
+    <label class="option"><input type="radio" name="q5" value="D) Depende de cada RP"><span class="letter">D</span><span>Depende de cada RP</span></label>
+  </div></fieldset>
+  <fieldset class="q"><legend><span class="question"><span class="qn">06</span>¿Cómo se comunican las RPs con los clientes?</span></legend><div class="options">
+    <label class="option"><input type="radio" name="q6" value="A) Desde su WhatsApp personal" required><span class="letter">A</span><span>Desde su WhatsApp personal</span></label>
+    <label class="option"><input type="radio" name="q6" value="B) Desde un WhatsApp oficial"><span class="letter">B</span><span>Desde un WhatsApp oficial</span></label>
+    <label class="option"><input type="radio" name="q6" value="C) Ambas opciones"><span class="letter">C</span><span>Ambas opciones</span></label>
+    <label class="option"><input type="radio" name="q6" value="D) Principalmente de forma presencial"><span class="letter">D</span><span>Principalmente de forma presencial</span></label>
+  </div></fieldset>
+  <fieldset class="q"><legend><span class="question"><span class="qn">07</span>¿Actualmente cuentan con una base de datos de clientes?</span></legend><div class="options">
+    <label class="option"><input type="radio" name="q7" value="A) Sí, tenemos contactos organizados" required><span class="letter">A</span><span>Sí, tenemos contactos organizados</span></label>
+    <label class="option"><input type="radio" name="q7" value="B) Tenemos contactos en WhatsApp, pero no organizados"><span class="letter">B</span><span>Tenemos contactos en WhatsApp, pero no organizados</span></label>
+    <label class="option"><input type="radio" name="q7" value="C) Cada RP guarda sus propios contactos"><span class="letter">C</span><span>Cada RP guarda sus propios contactos</span></label>
+    <label class="option"><input type="radio" name="q7" value="D) No tenemos base de datos"><span class="letter">D</span><span>No tenemos base de datos</span></label>
+  </div></fieldset>
+  <fieldset class="q"><legend><span class="question"><span class="qn">08</span>¿Quién podría encargarse de dar seguimiento a los turistas desde un WhatsApp oficial?</span></legend><div class="options">
+    <label class="option"><input type="radio" name="q8" value="A) Yo directamente" required><span class="letter">A</span><span>Yo directamente</span></label>
+    <label class="option"><input type="radio" name="q8" value="B) Alguien de mi equipo"><span class="letter">B</span><span>Alguien de mi equipo</span></label>
+    <label class="option"><input type="radio" name="q8" value="C) Ya tenemos a una persona encargada"><span class="letter">C</span><span>Ya tenemos a una persona encargada</span></label>
+    <label class="option"><input type="radio" name="q8" value="D) Todavía no sé"><span class="letter">D</span><span>Todavía no sé</span></label>
+  </div></fieldset>
+
+  <div class="group"><small>03 / PRODUCTO Y KPI</small><h3>LO QUE VAMOS A CONSTRUIR</h3></div>
+  <fieldset class="q" id="question-q9"><legend><span class="question"><span class="qn">09</span>¿Qué te gustaría que pudiera hacer la página de Callejero?</span></legend>
+  <p class="multi-hint">✳ PUEDES ELEGIR VARIAS OPCIONES</p><div class="options">
+    <label class="option"><input type="checkbox" name="q9" value="A) Informar sobre los eventos y resolver dudas"><span class="letter">A</span><span>Informar sobre los eventos y resolver dudas</span></label>
+    <label class="option"><input type="checkbox" name="q9" value="B) Registrar turistas interesados en las fiestas"><span class="letter">B</span><span>Registrar turistas interesados en las fiestas</span></label>
+    <label class="option"><input type="checkbox" name="q9" value="C) Ayudar a promocionar otros eventos durante su estancia"><span class="letter">C</span><span>Ayudar a promocionar otros eventos durante su estancia</span></label>
+    <label class="option"><input type="checkbox" name="q9" value="D) Facilitar contacto mediante un WhatsApp oficial"><span class="letter">D</span><span>Facilitar contacto mediante un WhatsApp oficial</span></label>
+  </div></fieldset>
+  <fieldset class="q" id="question-q10"><legend><span class="question"><span class="qn">10</span>¿Qué sería lo más importante para ti en un dashboard?</span></legend>
+  <p class="multi-hint">✳ PUEDES ELEGIR VARIAS OPCIONES</p><div class="options">
+    <label class="option"><input type="checkbox" name="q10" value="A) Consultar las ventas y resultados de las RPs"><span class="letter">A</span><span>Consultar las ventas y resultados de las RPs</span></label>
+    <label class="option"><input type="checkbox" name="q10" value="B) Conocer a los turistas interesados y cuánto tiempo siguen en Puerto"><span class="letter">B</span><span>Conocer a los turistas interesados y cuánto tiempo siguen en Puerto</span></label>
+    <label class="option"><input type="checkbox" name="q10" value="C) Medir promociones, asistencia y clientes que regresan"><span class="letter">C</span><span>Medir promociones, asistencia y clientes que regresan</span></label>
+    <label class="option"><input type="checkbox" name="q10" value="D) Medir la actividad digital y registros generados por cada RP"><span class="letter">D</span><span>Medir la actividad digital y registros generados por cada RP</span></label>
+  </div></fieldset>
+  <section class="q"><div class="question"><span class="qn">11</span><span>Si pudieras mejorar una sola cosa de cómo organizas los eventos y trabajas con las RPs actualmente, ¿qué cambiarías?</span></div><label for="q11" class="optional">PREGUNTA ABIERTA · OPCIONAL</label><textarea id="q11" name="q11" maxlength="700" placeholder="Cuéntanos alguna idea, problema o herramienta que te gustaría tener..."></textarea></section>
+
+  <div class="send-section">
+    <h3>LISTO. A CONSTRUIR.</h3>
+    <p>Al tocar el botón se abrirá WhatsApp dirigido al número indicado, con las 11 respuestas ya redactadas. Solo tendrás que confirmar el envío.</p>
+    <button class="send" type="submit">ENVIAR RESPUESTAS POR WHATSAPP ↗</button>
+  </div>
+</form>
+<p class="note">PRIVACIDAD · Este formulario no guarda respuestas en una base de datos. Solo prepara un mensaje al enviarlo por WhatsApp. No solicita teléfonos personales ni cifras de ingresos. Tu información se compartirá cuando confirmes el envío en WhatsApp.</p>
+</main>
+<footer class="footer"><span>CALLEJERO PXM / BEHIND THE PARTY</span><span>LAS RPs SIGUEN VENDIENDO A SU MANERA <strong>✳</strong></span></footer>
+<script>
+(() => {
+  // Destino proporcionado por el usuario: +52 229 250 7595.
+  const DESTINO_WHATSAPP = '522292507595';
+  const preguntas = [
+    '¿Con qué eventos te gustaría empezar?',
+    '¿Cómo trabajan actualmente las RPs entre los diferentes eventos?',
+    '¿Cómo llevas actualmente el control de las ventas de las RPs?',
+    '¿Puedes saber exactamente cuánto vende cada RP?',
+    '¿Qué ocurre cuando un turista se interesa por una fiesta, pero no compra?',
+    '¿Cómo se comunican las RPs con los clientes?',
+    '¿Actualmente cuentan con una base de datos de clientes?',
+    '¿Quién podría encargarse de dar seguimiento a los turistas desde un WhatsApp oficial?',
+    '¿Qué te gustaría que pudiera hacer la página de Callejero?',
+    '¿Qué sería lo más importante para ti en un dashboard?',
+    'Si pudieras mejorar una sola cosa de cómo organizas los eventos y trabajas con las RPs actualmente, ¿qué cambiarías?'
+  ];
+  const form = document.getElementById('diagnostico');
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    if (!form.reportValidity()) return;
+    // En las preguntas de funciones y métricas puede marcar varias respuestas.
+    // Exigimos al menos una en cada pregunta, sin obligar a elegir la opción A.
+    for (const id of ['q9', 'q10']) {
+      const fieldset = document.getElementById('question-' + id);
+      const chosen = form.querySelectorAll('input[name="' + id + '"]:checked');
+      fieldset.classList.toggle('needs-choice', !chosen.length);
+      fieldset.querySelectorAll('.multi-error').forEach(node=>node.remove());
+      if (!chosen.length) {
+        const msg = document.createElement('p');
+        msg.className = 'multi-error';
+        msg.setAttribute('role', 'alert');
+        msg.textContent = 'Selecciona al menos una opción para continuar.';
+        fieldset.appendChild(msg);
+        fieldset.scrollIntoView({behavior:'smooth', block:'center'});
+        return;
+      }
+    }
+    const data = new FormData(form);
+    const lines = ['*CALLEJERO PXM — BEHIND THE PARTY*', 'Respuestas de Denise', ''];
+    for (let n=1;n<=11;n++) {
+      lines.push('*'+String(n).padStart(2,'0')+'. '+preguntas[n-1]+'*');
+      const seleccionadas = data.getAll('q'+n).map(v => v.toString().trim()).filter(Boolean);
+      const respuesta = n === 11 ? (seleccionadas[0] || '(Sin respuesta abierta)') : seleccionadas.join('\n');
+      lines.push(respuesta);
+      lines.push('');
+    }
+    window.location.assign('https://wa.me/'+DESTINO_WHATSAPP+'?text='+encodeURIComponent(lines.join('\n')));
+  });
+})();
+</script>
+</body>
+</html>
